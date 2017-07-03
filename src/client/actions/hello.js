@@ -30,5 +30,3 @@ export const sayHelloAsync = (num: number) => (dispatch: Function) => {
       dispatch(sayHelloAsyncFailure())
     })
 }
-
-
