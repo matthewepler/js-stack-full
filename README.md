@@ -12,3 +12,5 @@ If pushing right after a commit, you can skip the Husky test by using `git push 
 
 **Killing the production server**
 `Ctrl-c` will kill the last command, which in the case of `pm2` is the `pm2 logs` command. To stop the server, run `yarn prod:stop`
+
+App will build automatically when using `git push`
