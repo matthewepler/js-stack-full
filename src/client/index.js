@@ -1,5 +1,8 @@
 import 'babel-polyfill'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
+import App from './app'
 import { APP_CONTAINER_SELECTOR } from '../shared/config'
 
-document.querySelector(APP_CONTAINER_SELECTOR).innerHTML = '<h1>Hello Webpack!</h1>'
+ReactDOM.render(<App />, document.querySelector(APP_CONTAINER_SELECTOR))

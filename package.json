@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn dev:start",
-    "dev:start": "nodemon -e js,jsx --ignore lib --ignore dist --exec babel-node src/server",
+    "dev:start": "nodemon -e js,jsx --ignore lib --ignore dist --watch src/server --watch src/shared --exec babel-node src/server",
     "dev:wds": "webpack-dev-server --progress",
     "prod:build": "rimraf lib && babel src -d lib --ignore .test.js && cross-env NODE_ENV=production webpack -p --progress",
     "prod:start": "cross-env NODE_ENV=production pm2 start lib/server && pm2 logs",
@@ -21,8 +21,10 @@
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.1",
+    "babel-plugin-flow-react-proptypes": "^3.4.1",
     "babel-preset-env": "^1.5.2",
     "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "cross-env": "^5.0.1",
     "eslint": "^4.1.1",
     "eslint-plugin-compat": "^1.0.4",
@@ -40,6 +42,8 @@
     "babel-polyfill": "^6.23.0",
     "compression": "^1.6.2",
     "express": "^4.15.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "standard": "^10.0.2"
   },
   "standard": {
