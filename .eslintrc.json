@@ -5,7 +5,8 @@
   },
   "extends": [
     "standard",
-    "plugin:flowtype/recommended"
+    "plugin:flowtype/recommended",
+    "plugin:react/recommended"
   ],
   "parser": "babel-eslint",
   "plugins": [
