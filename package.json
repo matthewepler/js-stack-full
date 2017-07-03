@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src",
+    "start": "babel-node src/server",
     "test": "eslint src --fix && flow && jest --coverage",
     "precommit": "yarn test",
     "prepush": "yarn test"
@@ -23,6 +23,8 @@
     "jest": "^20.0.4"
   },
   "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
     "standard": "^10.0.2"
   },
   "standard": {
