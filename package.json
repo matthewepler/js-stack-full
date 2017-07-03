@@ -43,18 +43,20 @@
     "compression": "^1.6.2",
     "express": "^4.15.3",
     "immutable": "4.0.0-rc.2",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-hot-loader": "next",
     "react-redux": "^5.0.5",
     "redux": "^3.7.1",
     "redux-actions": "^2.2.1",
+    "redux-thunk": "^2.2.0",
     "standard": "^10.0.2"
   },
   "standard": {
-    "parser": "babel-eslint",
-    "plugins": [
-      "flowtype"
+    "globals": [
+      "expect",
+      "test"
     ]
   },
   "browserslist": [

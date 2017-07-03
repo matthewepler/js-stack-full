@@ -9,5 +9,4 @@ type Props = {
 const Message = ({ message }: Props) =>
   <p>{message}</p>
 
-  export default Message
-  
+export default Message
