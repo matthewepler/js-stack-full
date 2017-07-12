@@ -21,8 +21,8 @@ const preloadedState = window.__PRELOADED_STATE__
 
 const store = createStore(combineReducers(
   { hello: helloReducer }),
-  { hello: Immutable.fromJS(preloadedState.hello) },
-  composeEnhancers(applyMiddleware(thunkMiddleware)))
+{ hello: Immutable.fromJS(preloadedState.hello) },
+composeEnhancers(applyMiddleware(thunkMiddleware)))
 
 const rootEl = document.querySelector(APP_CONTAINER_SELECTOR)
 

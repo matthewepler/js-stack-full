@@ -4,11 +4,11 @@ import React from 'react'
 import { Switch } from 'react-router'
 import { Route } from 'react-router-dom'
 import { APP_NAME } from '../shared/config'
-import Nav from './components/nav'
-import HomePage from './components/page/home'
-import HelloPage from './components/page/hello'
-import HelloAsyncPage from './components/page/hello-async'
-import NotFoundPage from './components/page/not-found'
+import Nav from '../shared/components/nav'
+import HomePage from '../shared/components/page/home'
+import HelloPage from '../shared/components/page/hello'
+import HelloAsyncPage from '../shared/components/page/hello-async'
+import NotFoundPage from '../shared/components/page/not-found'
 import {
   HOME_PAGE_ROUTE,
   HELLO_PAGE_ROUTE,

@@ -11,7 +11,7 @@ const NotFoundPage = () =>
       title={title}
       meta={[
         { name: 'description', content: 'A page to say hello' },
-        { property: 'og:title', content: title },
+        { property: 'og:title', content: title }
       ]}
     />
     <h1>{title}</h1>
